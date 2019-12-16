@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 
 <!DOCTYPE xsl:stylesheet [
-    <!ENTITY % entities SYSTEM "../../mathbook/xsl/entities.ent">
+    <!ENTITY % entities SYSTEM "../mathbook/xsl/entities.ent">
     %entities;
 ]>
 
@@ -10,7 +10,7 @@
     extension-element-prefixes="exsl"
 >
 
-<xsl:import href="../../mathbook/xsl/mathbook-html.xsl" />
+<xsl:import href="../mathbook/xsl/mathbook-html.xsl" />
 <xsl:import href="git-hash.xsl" />
 
 <!-- JDR: for caching -->

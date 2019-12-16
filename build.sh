@@ -1,13 +1,13 @@
 #!/bin/bash
 
-base_dir="/base"
-compile_dir="$base_dir/gt-linalg"
-build_base="/home/vagrant"
+base_dir=$PWD
+compile_dir="$base_dir"
+build_base="$base_dir/vagrant"
 build_dir="$build_base/build"
 latex_dir="$build_base/build-pdf"
 cache_dir="$build_base/pretex-cache"
 static_dir="$build_dir/static"
-figure_img_dir="$build_dir"/figure-images
+figure_img_dir="$build_dir/figure-images"
 pretex="$base_dir/gt-text-common/pretex/pretex.py"
 node_dir="$build_base/node_modules"
 
@@ -224,7 +224,7 @@ xsltproc -o "$build_dir/" --xinclude --stringparam pdf.online $PDF_FILE \
 echo "Preprocessing LaTeX (be patient)..."
 [ -n "$PRETEX_ALL" ] && rm -r "$cache_dir"
 python3 "$pretex" --chunk-size $CHUNKSIZE --preamble "$build_dir/preamble.tex" \
-        --cache-dir "$cache_dir" --style-path "$compile_dir"/style \
+        --cache-dir "$cache_dir" --style-path "$compile_dir/style" \
         --build-dir "$build_dir" \
     || die "Can't process html!"
 mkdir "$figure_img_dir"

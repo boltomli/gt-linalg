@@ -14,18 +14,15 @@ Overview:
 
 ## Fetch the repositories
 
-First decide where you want to put all the files.  I have my files in
-`~/projects/textbooksGT`.  Change to that directory and run:
 ```
-> git clone -b gt git@github.com:QBobWatson/mathbook.git
-> git clone -b gt git@github.com:QBobWatson/mathbook-assets.git
-> git clone git@github.com:QBobWatson/gt-text-common.git
-> git clone git@github.com:QBobWatson/gt-linalg.git
+> git clone https://github.com/boltomli/gt-linalg.git
+> cd gt-linalg
+> git submodule update --init --recursive
 ```
 
 This should create directories called `mathbook`, `mathbook-assets`,
-`gt-text-common`, and `gt-linalg` in the current directory.  The first three contain
-support files needed to build the book.  The last repository contains the source for the book and demos.
+and `gt-text-common` in the current directory.  The three contain
+support files needed to build the book. The current repository contains the source for the book and demos.
 
 
 ## Setup the build system

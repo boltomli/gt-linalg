@@ -1,0 +1,11 @@
+[submodule "mathbook"]
+	path = mathbook
+	url = https://github.com/QBobWatson/mathbook.git
+	branch = gt
+[submodule "mathbook-assets"]
+	path = mathbook-assets
+	url = https://github.com/QBobWatson/mathbook-assets.git
+	branch = gt
+[submodule "gt-text-common"]
+	path = gt-text-common
+	url = https://github.com/QBobWatson/gt-text-common.git

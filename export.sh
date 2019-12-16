@@ -1,8 +1,8 @@
 #!/bin/bash
 
-base_dir="/base"
-compile_dir="$base_dir/gt-linalg"
-build_base="/home/vagrant"
+base_dir="$PWD"
+compile_dir="$base_dir"
+build_base="$base_dir/vagrant"
 build_dir="$build_base/build"
 
 # Run in the vagrant build vm
